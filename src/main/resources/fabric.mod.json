@@ -6,7 +6,9 @@
   "description": "Adds like 3 things server side",
   "authors": [],
   "contact": {
-    "homepage": "https://modrinth.com/project/abundance-server"
+    "homepage": "https://modrinth.com/project/abundance-server",
+    "issues": "https://github.com/SeaSharpy/Abundance",
+    "sources": "https://github.com/SeaSharpy/Abundance"
   },
   "license": "All-Rights-Reserved",
   "icon": "assets/abundance/icon.png",
