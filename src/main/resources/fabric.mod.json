@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "abundance",
+  "version": "${version}",
+  "name": "Abundance",
+  "description": "Adds like 3 things server side",
+  "authors": [],
+  "contact": {
+    "homepage": "https://modrinth.com/project/abundance-server"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/abundance/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "org.GroceyLot.abundance.Abundance"
+    ]
+  },
+  "mixins": [
+    "abundance.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

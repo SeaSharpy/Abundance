@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " D ",
+    " G ",
+    " R "
+  ],
+  "key": {
+    "D": "minecraft:crossbow",
+    "R": "minecraft:redstone",
+    "G": "minecraft:gunpowder"
+  },
+  "result": {
+    "id": "minecraft:stick",
+    "components": {
+      "minecraft:item_name": {
+        "text": "Rocket Launcher"
+      },
+      "minecraft:custom_data": {
+        "rocket_marker": {}
+      },
+      "minecraft:item_model": "minecraft:crossbow"
+    },
+    "count": 1
+  },
+  "show_notification": true
+}

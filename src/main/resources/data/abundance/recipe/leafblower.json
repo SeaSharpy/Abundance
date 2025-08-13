@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " W ",
+    " S ",
+    "RG "
+  ],
+  "key": {
+    "W": "minecraft:wind_charge",
+    "S": "minecraft:stick",
+    "R": "minecraft:redstone",
+    "G": "minecraft:glowstone_dust"
+  },
+  "result": {
+    "id": "minecraft:stick",
+    "components": {
+      "minecraft:item_name": {
+        "text": "Leaf Blower"
+      },
+      "minecraft:custom_data": {
+        "leafblower_marker": {}
+      }
+    },
+    "count": 1
+  },
+  "show_notification": true
+}
