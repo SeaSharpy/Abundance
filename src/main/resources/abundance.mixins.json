@@ -4,7 +4,6 @@
   "package": "org.GroceyLot.abundance.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "FallingBlockEntityMixin"
   ],
   "injectors": {
     "defaultRequire": 1
