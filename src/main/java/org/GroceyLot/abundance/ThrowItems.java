@@ -14,7 +14,7 @@ public final class ThrowItems {
         if (!(item.getItem() instanceof BlockItem bi)) return;
 
         item.decrementUnlessCreative(1, player);
-        ServerWorld world = player.getWorld();
+        ServerWorld world = player.getEntityWorld();
 
         Vec3d camNow = player.getCameraPosVec(0.0f).subtract(0, 0, 0);
         Vec3d camNext = player.getCameraPosVec(1.0f).subtract(0, 0, 0);

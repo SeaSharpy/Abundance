@@ -9,6 +9,7 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.nbt.NbtCompound;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
@@ -74,8 +75,8 @@ public class Abundance implements ModInitializer {
         // fetch the CustomData component
         NbtComponent data = stack.get(DataComponentTypes.CUSTOM_DATA);
         if (data == null) return false;
-        // check for your marker key
-        return data.contains(marker);
+        // check for marker key
+        return data.toString().contains(marker);
     }
 
 
@@ -117,7 +118,8 @@ public class Abundance implements ModInitializer {
                 || block == Blocks.HONEY_BLOCK
                 || block == Blocks.TRIPWIRE
                 || block == Blocks.REDSTONE_WIRE
-                || block == Blocks.CHAIN
+                || block == Blocks.IRON_CHAIN
+                || Blocks.COPPER_CHAINS.getAll().contains(block)
                 || block == Blocks.LANTERN
                 || block == Blocks.SOUL_LANTERN
                 || block == Blocks.TORCH
