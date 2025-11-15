@@ -26,9 +26,7 @@ public final class ThrowItems {
 
         BlockPos bp = BlockPos.ofFloored(spawnPos);
         FallingBlockEntity falling = FallingBlockEntity.spawnFromBlock(world, bp, state);
-        if (falling == null) return; // safety
 
         falling.setVelocity(velocity.x, velocity.y, velocity.z);
-        world.spawnEntity(falling);
     }
 }
